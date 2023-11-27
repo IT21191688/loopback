@@ -3,7 +3,14 @@ import {juggler} from '@loopback/repository';
 
 const config = {
   name: 'customerDataSource',
-  connector: 'mongoDB'
+  connector: 'mongodb',
+  url: '',
+  host: 'localhost',
+  port: 27017,
+  user: '',
+  password: '',
+  database: 'customer-test-db',
+  useNewUrlParser: true
 };
 
 // Observe application's life cycle to disconnect the datasource when
